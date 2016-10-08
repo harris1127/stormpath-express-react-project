@@ -1,10 +1,13 @@
-/* eslint-disable no-var */
+/**
+ * This looks in our src folder and packages all the files and scripts together
+ */
+
 var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
   entry: [
-    './src/js/app'
+    './src'
   ],
   devtool: 'eval-source-map',
   output: {
@@ -14,9 +17,11 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: /\.js$/,
-      loaders: ['babel'],
-      include: path.join(__dirname, 'src/js')
-    }]
+        test: /\.js$/,
+        loaders: ['babel'],
+        include: path.join(__dirname, 'src')
+    }
+
+    ]
   }
 };
