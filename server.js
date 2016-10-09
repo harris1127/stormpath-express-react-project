@@ -1,6 +1,5 @@
 
 var path = require('path');
-//In order for express to serve web package we have to include below 2 lines
 var webpack = require('webpack');
 var config = require('./webpack.config');
 
@@ -11,7 +10,6 @@ var app = express();
 
 var compiler = webpack(config);
 
-//This will allow Webpack to intercept requests and serve our package files
 app.use(require('webpack-dev-middleware')(compiler, {
     noInfo: true,
     publicPath: config.output.publicPath

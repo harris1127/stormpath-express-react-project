@@ -1,13 +1,10 @@
-/**
- * This looks in our src folder and packages all the files and scripts together
- */
-
 var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
+  context: path.resolve(__dirname, 'app'),
   entry: [
-    './src'
+    '../src/js/app.js'
   ],
   devtool: 'eval-source-map',
   output: {
@@ -23,5 +20,12 @@ module.exports = {
     }
 
     ]
+  },
+  stats: {
+    // Configure the console output
+    errorDetails: true, //this does show errors
+    colors: false,
+    modules: true,
+    reasons: true
   }
 };
