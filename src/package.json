@@ -1,9 +1,9 @@
 {
   "version": "1.0.0",
-  "name": "stormpath-express-react-example",
-  "description": "A sample app demonstrating how to integrate Stormpath with React and Express.",
-  "homepage": "https://github.com/stormpath/stormpath-express-react-example",
-  "author": "Stormpath, Inc.",
+  "name": "Ryans Sandbox Project",
+  "description": "This will eventaully be a project to buy and sell things ",
+  "homepage": "Sold It",
+  "author": "Ryan Harris",
   "license": "Apache-2.0",
   "dependencies": {
     "babel-core": "^6.17.0",
@@ -17,9 +17,6 @@
     "express": "^4.14.0",
     "express-stormpath": "^3.1.5",
     "globals": "^9.9.0",
-    "history": "^3.2.1",
-    "morgan": "^1.7.0",
-    "ora": "^0.3.0",
     "react": "^15.3.2",
     "react-document-title": "^2.0.2",
     "react-dom": "^15.3.2",
