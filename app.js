@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	(function webpackMissingModule() { throw new Error("Cannot find module \"./src/\""); }());
+	(function webpackMissingModule() { throw new Error("Cannot find module \"../src/js/app.js\""); }());
 
 
 /***/ }
